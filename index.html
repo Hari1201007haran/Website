@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Dark Theme Only */
+        /* Base styles for dark theme */
         :root {
             --bg-start: #0a0a0c;
             --bg-end: #000000;
@@ -110,11 +110,11 @@
         }
         .coming-soon-title {
             font-family: 'Orbitron', sans-serif;
-            font-size: 5rem;
+            font-size: 5vmin; /* Adjusted for responsive scaling */
             font-weight: 700;
             color: var(--highlight-color);
             text-shadow: 0 0 10px var(--highlight-color);
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .progress-container {
@@ -161,14 +161,14 @@
             .logo-container img {
                 height: 40px;
             }
+            .coming-soon-title {
+                font-size: 10vw; /* Scale font with viewport width */
+            }
             .main-title {
-                font-size: 2rem;
+                font-size: 6vw;
             }
             .subtext {
-                font-size: 1.2rem;
-            }
-            .coming-soon-title {
-                font-size: 3rem;
+                font-size: 4vw;
             }
             .progress-container {
                 height: 30px;
